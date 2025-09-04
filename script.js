@@ -13,7 +13,6 @@ click.addEventListener ("mouseover", () => {
 
 
 //to validate the username input field
-const nameError = document.getElementById("nameError");
 const username = document.getElementById("username");
 username.oninput = function () {
     if (username.value.length < 3) {
@@ -33,11 +32,6 @@ agenda.oninput = function () {
     }
 }
 
-//to validate the email input field
-const emailError = document.getElementById("emailError");
-const email = document.getElementById("email");
-function isValidEmail(email) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
+
 
 
